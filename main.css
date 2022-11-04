@@ -1,0 +1,49 @@
+* {
+    --white: white;
+    --green: #198030;
+    --black: black;
+}
+body{
+    background-color: var(--green);
+    /* Fix for Header*/
+    margin: 0;
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    ". main ."
+    "footer footer footer";
+}
+.header {
+    grid-area: header;
+    border: 1px solid red;
+    width: 100%;
+    background-color: var(--white);
+}
+.main {
+    grid-area: main;
+    border: 1px solid red;
+    width: 100%;
+    min-height: 1000px;
+    background-color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.footer {
+    grid-area: footer;
+    border: 1px solid red;
+    width: 100%;
+    background-color: var(--white);
+}
+.nav{
+    grid-area: nav;
+    border: 1px solid red;
+    width: 100%;
+    background-color: var(--white);
+} 
+.logo-top{
+    border: none;
+    width: 10rem;
+}
