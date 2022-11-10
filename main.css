@@ -6,7 +6,7 @@
     --darkgrey: #082b10;
 }
 body {
-    background-color: var(--green);
+    background-color: var(--white);
     /* Fix for Header*/
     margin: 0;
 }
@@ -14,6 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-areas:
+        ". logo ."
         "header header header"
         "nav nav nav"
         ". main ."
@@ -49,11 +50,10 @@ body {
 .logo-top,
 .logo-top-render {
     border: none;
-    width: 10rem;
 }
 .title {
     font-family: var(--robotoFont);
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 600;
     color: var(--white);
 }
@@ -65,3 +65,24 @@ body {
     padding: 0.25rem;
     gap: 2rem;
 }
+.flex {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+.center {
+    grid-area: logo;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: ". img .";
+    flex-direction: row;
+    border: 1px solid red
+}
+.grid-img {
+    grid-area: img;
+}
+
