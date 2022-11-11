@@ -3,7 +3,7 @@
     --green: #198030;
     --black: black;
     --robotoFont: "Roboto", sans-serif;
-    --darkgrey: #082b10;
+    --darkgreen: #004400;
 }
 body {
     background-color: var(--white);
@@ -24,7 +24,7 @@ body {
     grid-area: header;
     border: 1px solid red;
     width: 100%;
-    background-color: var(--darkgrey);
+    background-color: var(--darkgreen);
 }
 .main {
     grid-area: main;
@@ -45,7 +45,10 @@ body {
     grid-area: nav;
     border: 1px solid red;
     width: 100%;
-    background-color: var(--darkgrey);
+    background-color: var(--darkgreen);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 .logo-top,
 .logo-top-render {
@@ -53,10 +56,16 @@ body {
 }
 .title {
     font-family: var(--robotoFont);
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 3em;
+    font-weight: 800;
     color: var(--white);
 }
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+}
+
 .title-container {
     /*border: 1px solid red;*/
     display: flex;
@@ -85,4 +94,15 @@ body {
 .grid-img {
     grid-area: img;
 }
+.nav-button {
+    color: white;
+    background-color: var(--green);
+    font-family: var(--robotoFont);
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
 
+}
