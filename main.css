@@ -106,3 +106,84 @@ body {
     cursor: pointer;
 
 }
+.konzept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "img1 pillar1 pillar1"
+        "pillar2 pillar2 img2"
+        "img3 pillar3 pillar3"
+        "pillar4 pillar4 img4";
+
+    gap: 1rem;
+    padding: 1rem;
+    font-family: var(--robotoFont);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.konzept-grid-pillar-1 {
+    grid-area: pillar1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+}
+.konzept-grid-pillar-2 {
+    grid-area: pillar2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+}
+.konzept-grid-pillar-3 {
+    grid-area: pillar3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid red;
+}
+.konzept-grid-pillar-4 {
+    grid-area: pillar4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+}
+.konzept-grid-img-1 {
+    grid-area: img1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid red;
+}
+.konzept-grid-img-2 {
+    grid-area: img2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+.konzept-grid-img-3 {
+    grid-area: img3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+.konzept-grid-img-4 {
+    grid-area: img4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
