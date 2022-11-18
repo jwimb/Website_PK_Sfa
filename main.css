@@ -32,9 +32,10 @@ body {
     border: 1px solid red;
     width: 100%;
     min-height: 1000px;
-    background-color: var(--white);
+    background-color: var(--light-green);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+
 }
 .footer {
     grid-area: footer;
@@ -121,6 +122,7 @@ body {
     font-family: var(--robotoFont);
     font-size: 1rem;
     font-weight: 600;
+    background-color: var(--white);
 }
 .konzept-grid-pillar {
     background-color: var(--light-green);
@@ -214,6 +216,7 @@ body {
     text-align: center;
     border: 1px solid red;
     font-weight: 900;
+    background-color: var(--white);
 }
 .blog-img {
     grid-area: img;
@@ -222,6 +225,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid red;
+    background-color: var(--white);
 
 }
 .blog-img-element {
@@ -235,6 +239,7 @@ body {
     align-items: center;
     text-align: center;
     border: 1px solid red;
+    background-color: var(--white);
 }
 .blog-text {
     grid-area: text;
@@ -242,4 +247,5 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid red;
+    background-color: var(--white);
 }
