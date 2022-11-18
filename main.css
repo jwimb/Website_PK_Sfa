@@ -55,7 +55,10 @@ body {
     grid-area: footer;
     border: 1px solid red;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--darkgreen);
+    padding: 0;
+    color: var(--white);
+    text-align: center;
 }
 .nav {
     grid-area: nav;
@@ -164,6 +167,8 @@ body {
 }
 .konzept-grid-pillar {
     background-color: var(--light-green);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 .konzept-grid-pillar-1 {
     grid-area: pillar1;
@@ -172,7 +177,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-pillar-2 {
     grid-area: pillar2;
@@ -181,7 +186,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-pillar-3 {
     grid-area: pillar3;
@@ -191,7 +196,7 @@ body {
     align-items: center;
     text-align: center;
 
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-pillar-4 {
     grid-area: pillar4;
@@ -200,7 +205,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-img-1 {
     grid-area: img1;
@@ -208,28 +213,28 @@ body {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-img-2 {
     grid-area: img2;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-img-3 {
     grid-area: img3;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .konzept-grid-img-4 {
     grid-area: img4;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .seperator-line {
     border: 1px solid var(--green);
@@ -324,4 +329,7 @@ body {
             "pillar3"
             "pillar4";
     }
+}
+span > .stress {
+    font-weight: 900 !important;
 }
