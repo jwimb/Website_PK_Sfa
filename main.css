@@ -1,6 +1,7 @@
 * {
     --white: white;
     --green: #198030;
+    --light-green: #BEECB0;
     --black: black;
     --robotoFont: "Roboto", sans-serif;
     --darkgreen: #004400;
@@ -47,7 +48,7 @@ body {
     width: 100%;
     background-color: var(--darkgreen);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
 .logo-top,
@@ -121,6 +122,9 @@ body {
     font-size: 1rem;
     font-weight: 600;
 }
+.konzept-grid-pillar {
+    background-color: var(--light-green);
+}
 .konzept-grid-pillar-1 {
     grid-area: pillar1;
     display: flex;
@@ -186,4 +190,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid red;
+}
+.blog {
+    
 }
