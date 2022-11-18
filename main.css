@@ -10,6 +10,7 @@ body {
     background-color: var(--white);
     /* Fix for Header*/
     margin: 0;
+    font-size: 1.5rem !important;
 }
 .body {
     display: grid;
@@ -20,7 +21,20 @@ body {
         "nav nav nav"
         ". main ."
         "footer footer footer";
+
 }
+@media screen and (max-width: 600px) {
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+}
+    
 .header {
     grid-area: header;
     border: 1px solid red;
@@ -52,6 +66,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
+@media screen and (max-width: 600px) {
+    .nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+    
+
 .logo-top,
 .logo-top-render {
     border: none;
@@ -113,7 +135,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 1rem 0rem;
 }
 .konzept-beschreibung {
     font-family: var(--robotoFont);
@@ -134,7 +156,7 @@ body {
     gap: 1rem;
     padding: 1rem;
     font-family: var(--robotoFont);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .konzept {
@@ -209,6 +231,15 @@ body {
     justify-content: center;
     border: 1px solid red;
 }
+.seperator-line {
+    border: 1px solid var(--green);
+    width: 100%;
+    margin: 3rem 0rem;
+    padding: 0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 .blog {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -264,4 +295,33 @@ body {
     justify-content: center;
     border: 1px solid red;
     background-color: var(--white);
+}
+/*Do not show Konzept logo on small devices*/
+@media screen and (max-width: 600px) {
+    .logo-konzept {
+        display: none;
+    }
+}
+/*Do not show Konzept trees on smaller devices*/
+@media screen and (max-width: 600px) {
+    .konzept-grid-img-1 {
+        display: none;
+    }
+    .konzept-grid-img-2 {
+        display: none;
+    }
+    .konzept-grid-img-3 {
+        display: none;
+    }
+    .konzept-grid-img-4 {
+        display: none;
+    }
+    .konzept-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "pillar1"
+            "pillar2"
+            "pillar3"
+            "pillar4";
+    }
 }
