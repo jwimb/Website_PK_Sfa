@@ -1,7 +1,7 @@
 * {
     --white: white;
     --green: #198030;
-    --light-green: #BEECB0;
+    --light-green: #beecb0;
     --black: black;
     --robotoFont: "Roboto", sans-serif;
     --darkgreen: #004400;
@@ -21,7 +21,6 @@ body {
         "nav nav nav"
         ". main ."
         "footer footer footer";
-
 }
 @media screen and (max-width: 600px) {
     .body {
@@ -34,7 +33,7 @@ body {
             "footer";
     }
 }
-    
+
 .header {
     grid-area: header;
     /*border: 1px solid red;*/
@@ -45,13 +44,12 @@ body {
     grid-area: main;
     /*border: 1px solid red;*/
     width: 100%;
-    min-height: 1000px;
+    min-height: 500px;
     background-color: var(--white);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     border-left: 1px solid var(--green);
     border-right: 1px solid var(--green);
-
 }
 .footer {
     grid-area: footer;
@@ -78,7 +76,6 @@ body {
         grid-template-rows: 1fr 1fr;
     }
 }
-    
 
 .logo-top,
 .logo-top-render {
@@ -107,10 +104,10 @@ body {
 .flex {
     display: flex;
     align-items: center;
-  justify-content: center;
-  text-align: center;
+    justify-content: center;
+    text-align: center;
 }
-.flex-row{
+.flex-row {
     flex-direction: row;
 }
 .center {
@@ -134,10 +131,9 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
-
 }
 .konzept-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -262,7 +258,6 @@ body {
     font-weight: 600;
     border-bottom: 1px solid var(--green);
     margin: 0 1rem;
-
 }
 .blog-title {
     grid-area: title;
@@ -283,7 +278,6 @@ body {
     justify-content: center;
     /*border: 1px solid red;*/
     background-color: var(--white);
-
 }
 .blog-img-element {
     margin: inherit;
@@ -337,4 +331,65 @@ body {
 }
 span > .stress {
     font-weight: 900 !important;
+}
+
+/*Kontakt Site*/
+.kontakt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+        "title "
+        "standard"
+        "social";
+    /*Center Items*/
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--robotoFont);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+.kontakt-title {
+    grid-area: title;
+    text-align: center;
+    /*border: 1px solid red;*/
+    font-weight: 900;
+    background-color: var(--white);
+}
+.kontakt-text {
+    grid-area: standard;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*border: 1px solid red;*/
+    background-color: var(--white);
+}
+
+.kontakt-social-media {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*border: 1px solid red;*/
+    background-color: var(--white);
+}
+.social-media-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    /*border: 1px solid red;*/
+}
+.social-media-img {
+    padding: 0;
+    border: 2px solid var(--green);
+    border-radius: 50%;
 }
