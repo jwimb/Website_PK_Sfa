@@ -22,7 +22,7 @@ body {
         ". main ."
         "footer footer footer";
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .body {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -70,7 +70,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .nav {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -87,9 +87,13 @@ body {
     font-weight: 800;
     color: var(--white);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .title {
         font-size: 2em;
+    }
+    .main {
+        border: none !important;
+        padding: 0% !important;
     }
 }
 
