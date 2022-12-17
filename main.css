@@ -96,6 +96,19 @@ body {
         padding: 0% !important;
     }
 }
+@media screen and (max-width: 430px) {
+    .title {
+        font-size: 1.5em;
+    }
+    .blog {
+        border: none !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 1.2em;
+    }
+}
 
 .title-container {
     /*border: 1px solid red;*/
