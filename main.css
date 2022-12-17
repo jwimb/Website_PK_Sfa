@@ -393,7 +393,15 @@ span > .stress {
     /*border: 1px solid red;*/
 }
 .social-media-img {
-    padding: 0;
+    padding: 1rem;
+}
+.social-media-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.social-media-link {
+    text-decoration: none;
+    color: var(--green);
     border: 2px solid var(--green);
     border-radius: 50%;
 }
