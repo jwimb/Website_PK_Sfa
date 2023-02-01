@@ -418,3 +418,42 @@ span > .stress {
     border: 2px solid var(--green);
     border-radius: 50%;
 }
+
+.partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    /* Alignment */
+    justify-items: center;
+    align-items: center;
+}
+
+/* on smaller Screens */
+@media screen and (max-width: 600px) {
+    .partner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+.partner-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*border: 1px solid red;*/
+    background-color: var(--white);
+    /* Font */
+    font-family: var(--robotoFont);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--green);
+}
