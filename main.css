@@ -457,3 +457,15 @@ span > .stress {
     text-decoration: none;
     color: var(--green);
 }
+
+@media screen and (min-width: 600px) {
+    .col-span {
+        grid-column: span 2;
+    }
+    .col-span figure img {
+        width: 500px;
+    }
+    .row-span {
+        grid-row: span 2;
+    }
+}
