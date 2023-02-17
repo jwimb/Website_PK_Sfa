@@ -430,10 +430,16 @@ span > .stress {
 }
 
 /* on smaller Screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .partner {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .partner {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
