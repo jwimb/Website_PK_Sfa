@@ -316,6 +316,7 @@ body {
     justify-content: center;
     /*border: 1px solid red;*/
     background-color: var(--white);
+    font-weight: 400;
 }
 /*Do not show Konzept logo on small devices*/
 @media screen and (max-width: 600px) {
